@@ -15,7 +15,7 @@ This project is a Flutter Meals mobile application which gives the user the abil
 ## Features of the app With Screenshots
 
 | Task                   | Screenshot                                                   | Task                       | Screenshot                                                             |
-| ---------------------- | ------------------------------------------------------------ | -------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------- | ----- |
+| ---------------------- | ------------------------------------------------------------ | -------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------- |
 | Tabs Navigation Screen | ![Tabs Navigation Screen](assets/screenshots/tabsScreen.png) | Favorite Screen            | ![Favorite Screen](assets/screenshots/favoriteScreen.png)              |
 | A Category Screen      | ![A Category Screen](assets/screenshots/categoryScreen.png)  | A Filtered Category Screen | ![A Filtered Category Screen](assets/screenshots/categoryFiltered.png) |
-| Filters Screen         | ![Filters Screen](assets/screenshots/filters.png)            | Side Drawer                | ![Meal Details](assets/screenshots/mealDetails.png)                    | ![Side Drawer](assets/screenshots/sideDrawer.png) | ![]() |
+| Filters Screen         | ![Filters Screen](assets/screenshots/filters.png)            | Side Drawer                | ![Meal Details](assets/screenshots/mealDetails.png)                    | ![Side Drawer](assets/screenshots/sideDrawer.png) |
