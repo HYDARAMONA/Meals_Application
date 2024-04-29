@@ -22,4 +22,4 @@ State management done using riverpod.
 | ---------------------- | ------------------------------------------------------------ | -------------------------- | ---------------------------------------------------------------------- |
 | Tabs Navigation Screen | ![Tabs Navigation Screen](assets/screenshots/tabsScreen.png) | Favorite Screen            | ![Favorite Screen](assets/screenshots/favoriteScreen.png)              |
 | A Category Screen      | ![A Category Screen](assets/screenshots/categoryScreen.png)  | A Filtered Category Screen | ![A Filtered Category Screen](assets/screenshots/categoryFiltered.png) |
-| Filters Screen         | ![Filters Screen](assets/screenshots/filters.png)            | Side Drawer                | ![Meal Details](assets/screenshots/mealDetails.png)                    |
+| Filters Screen         | ![Filters Screen](assets/screenshots/filters.png)            | Meal Details screen        | ![Meal Details](assets/screenshots/mealDetails.png)                    |
