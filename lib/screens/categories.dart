@@ -8,10 +8,9 @@ import 'package:meals_app/screens/meals.dart';
 class CategorisScreen extends StatelessWidget {
   CategorisScreen({
     super.key,
-    required this.onToggleFavorite,
     required this.mealsFilteredBaseOnFilterVluesS,
   });
-  final void Function(Meal meal) onToggleFavorite;
+
   final List<Meal>
       mealsFilteredBaseOnFilterVluesS; //this is the meals list after choosing the filters
 
@@ -23,7 +22,6 @@ class CategorisScreen extends StatelessWidget {
       return MealsScreen(
         title: category.title,
         mealsList: filteredList,
-        onToggleFavorite: onToggleFavorite,
       );
     }));
   }

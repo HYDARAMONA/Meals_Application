@@ -1,27 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/meal_blueprint.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:meals_app/providers/favorite_meals_provider.dart';
 
-class MealDetailsScreen extends StatelessWidget {
+class MealDetailsScreen extends ConsumerWidget {
   const MealDetailsScreen({
     super.key,
     required this.meal,
-    required this.onToggleFavorite,
   });
 
   final Meal meal;
-  final void Function(Meal meal) onToggleFavorite;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final favoriteMeals = ref.watch(favoriteProvider);
+    final isFavorite = favoriteMeals.contains(meal);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(meal.title),
         actions: [
           IconButton(
             onPressed: () {
-              onToggleFavorite(meal);
+              final isAdded = ref
+                  .read(favoriteProvider.notifier)
+                  .toggleMealsFavoriteStatus(meal);
+              //code below is to show a snackBar dynamically when meal is
+              //added or removed from favorite based on bool value returned
+              // from the provider
+              ScaffoldMessenger.of(context).removeCurrentSnackBar();
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text(isAdded
+                    ? 'Meal has been added to favorite'
+                    : 'Meal has been removed from favorite'),
+              ));
             },
-            icon: Icon(Icons.star),
+            icon: Icon(
+              isFavorite ? Icons.star : Icons.star_border,
+            ),
           )
         ],
       ),
