@@ -2,7 +2,7 @@
 
 A full functional Flutter Meal Application.
 
-## Getting Started
+## Description
 
 This project is a Flutter Meals mobile application which gives the user the ability to :
 
@@ -11,6 +11,10 @@ This project is a Flutter Meals mobile application which gives the user the abil
 3. add a specific meal to a favorite list that will be displayed in the favorite screen using the star button in the app bar of the meal.
 4. navigate to the filters screen using side drawer.
 5. filter the displayed meals in each category based on the filters that has been chosen (the favorite meals wont be affected).
+
+### State Management
+
+State management done using riverpod.
 
 ## Features of the app With Screenshots
 
