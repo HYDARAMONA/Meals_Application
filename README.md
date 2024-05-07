@@ -12,9 +12,20 @@ This project is a Flutter Meals mobile application which gives the user the abil
 4. navigate to the filters screen using side drawer.
 5. filter the displayed meals in each category based on the filters that has been chosen (the favorite meals wont be affected).
 
-### State Management
+## State Management
 
 State management done using riverpod.
+
+## Animations
+
+1. Categories sliding into the screen coming from the bottom
+   navigation bar.
+2. Meal image sliding from the meal item in the meals screen
+   to fill the image place in the meal details screen.
+3. Favorite selection Star transitions from empty to filled
+   with rotation transition when marking meal as favorite.
+4. Favorite selection Star transitions from filled to empty
+   with rotation transition when unmarking meal as favorite.
 
 ## Features of the app With Screenshots
 
